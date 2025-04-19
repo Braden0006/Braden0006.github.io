@@ -25,86 +25,11 @@
     </header>
    
     <div id="container">
-      <p>Hello, my name is Braden and this is my e-portfilio</p>
-
-      <div class="content-container">
-	<h2>
-	  Unix-based shell
-	</h2>
-	<p>
-	  This artifact is a Unix-based shell that mimics that same functionality as bigger shells such as bash and zsh. The purpose of creating this project was to showcase my skills and abilities in low-level programming with C. It was created from scratch with no previous source code provided on March 10, 2025. There are three main areas that was planned to enhance this artifact, software design and engineering, data structures and algorithms, and databases. Each one has a significant contribution to the completion of this project and showcases my abilities to plan and implement important skills that are used in computer science roles.
-	</p>
-      </div>
-
-      <div class="content-container">
-	<h3>
-	  Professional Self Assessment
-	</h3>
-	<p>
-	  Throughout all of my courses in my degree program, there are a lot of things that I have learned and improved. Firsly, I have been introduced to and learned a lot about a wide variety of topics such as databases, software development and engineering, artificial intelligence, data structures and algorithms, 3D computer graphics, and secure coding. I also learned about the importance of having good communication with the team you're working with, project managers, and stakeholders. Doing so allows the company that you work for to save time and money. 
-	</p>
-	<p>
-	  This artifact demonstrates my abilities to envision and create a solution to create a tool that utilizes good software design and engineering practices, uses appropriate data structures and algorithms, and communicates with an SQLite database.
-	</p>
-      </div>
-
-      <div class="content-container">
-	<h3>
-	  Code Review
-	</h3>
-	<p>
-	  Before any of the major enhancements were implemented, a rough MVP was created and a code review was performed to explain the current state of the project and how the future enhancements were going to be executed. The video link for the code review can be found below:
-	</p>
-	<a href="https://youtu.be/5cw853nXDUE">Code Review</a>
-      </div>
-
-      <div class="content-container">
-	<h3>
-	  Enhancement One - Software Design and Engineering
-	</h3>
-	<p>
-	  The first enhancment that was made was to ensure good documentation, effective code comments, maintain good structure of project files, and effectively separate important functions into their own file for better readability and maintainability. The main purpose of all this is to show how I can effectively and efficiently plan and execute changes to a project while presenting good coding practices and documentation.
-	</p>
-
-	<p>
-	  One of the main challenges when programming the features was understanding the fork(), waitpid(), and execvp() commands within C. In simple terms, fork() is used to create separate system processes. When it is called, it creates a child process that has a different process ID(PID) than the parent process. In order to correctly distinguish between the parent and the child process, you can check the integer value of the PID. If it is zero, then it's the child, and if it's not then it's the parent. The "execvp()" is a system call that searches for the executables of the parameter that was passed into it in the systems $PATH environment variables, replaces the current process image, and runs them. Lastly, the "waitpid()" is another system call that simply suspends the current calling process and waits until the child process ends or is stopped. I learned a lot from this enhancement about the C programming language as well as system calls. I learned more about pointers and memory, as well as implementing good security practices by making sure all dynamically allocated memory was free'd when it wasn't needed anymore. Not doing so can introduce memory leaks which will lead to unexpected outcomes and behavior. 
-	</p>
-
-	<p>
-	  One course outcome that was achieved with this enhancement is designing, developing, and delivering professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts. The second one is developing a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.
-	</p>
-      </div>
-
-      <div class="content-container">
-	<h3>
-	  Enhancement Two - Data Structures and Algorithms
-	</h3>
-	<p>
-	  For this enhancment, A data structure and algorithm was implemented to a specific part of the project that would benefit from it. The one that was chosen was a linked list and it was used to store the command history of every command the user enters. A linked list contains a list of nodes where each one has a pointer that points to the next node. It uses an iterative algorithm that searches through the entire list and prints each one to the terminal one-by-one by pressing the "Up" arrow key. The time complexity for this is O(n), where n is the amount of items in the list, and the space complexity is O(1).
-	</p>
-	<p>
-	  Overall, the process of implementing the linked list was seamless with little bumps in the road. One of the main challenges that was faced was trying to figure out how to use the "Up" arrow key to print each node in the linked list one-by-one. One solution was to manipulate the terminal settings, of the program, with the "termios.h" header file to turn off line buffering. This essentially means that it allows the program to identify when a key is pressed down rather than wait until the "Enter" key is pressed. The problem with this approach is that you can't use termios on any specific part of the program, unless a keyword is entered by the user to enable it. The desired solution was to has this process running at all times during the program so the user can simply press the "Up" arrow key instead of typing in a keyword. Unfortunately, this requires me to change the design and tokenization of the entire program, which is unrealistic, especially if I'm having to work in a legacy codebase with hundreds of thousands of lines of code. The solution that was implemented was to use the "ncurses.h" header file which replaces the current terminal with a fresh one and disables line buffering. This functionality is executed when the user types the "history" command. The reason why I went with this approach and not the "termios.h" header was because it's much easier to set up and doesn't require me to configure the programs terminal settings, "ncurses.h" already does that by default. After all of this was figured out, I just made it so that whenever the "Up" arrow is pressed, it prints the head node at the beginning of the linked list and then adjuts the pointer value to point to the next node. Once the "Up" arrow key is pressed again, the next node is printed and the process continues. Once it reaches the end of the list, it resets by setting the pointer value back to the head node and continues. 
-	</p>
-
-	<p>
-	  One course outcome that was achieved with this enhancement is designing and evaluating computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices. Another one is demonstrating an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.
-	</p>
-      </div>
-
-      <div class="content-container">
-	<h3>
-	  Enhancement Three - Databases
-	</h3>
-	<p>
-	  This enhancement showcases my abilities to connect and communicate with a database for storing information. The one that was chosen was SQLite, which is a relational database. It was used to store aliases that the user can set to give built-in commands a different key map. The reason why I chose SQLite is because it is serverless and is stored on the users local computer, which makes it really easy to communicate with it with or without a network connection.
-	<p>
-	<p>
-	  The process of downloading SQLite onto my computer and initializing it in the program was also pretty seamless. The first small challenge I faced was figuring out how to execute paramaterized SQL commands. I knew how to execute commands where the values were known, but since the values depended on the user input, I had to find a way to capture and execute them. The process that was found in solving this goes like this: tokenize and capture values from user input, define the SQL command with the values being a question mark(?), bind the tokenized user input to the question marks in the variable with the SQL command, execute it. The main thing I learned from this enhancement was connecting a SQL database to an existing program and communicating with it. Before, I had only learned SQL commands within a virtual machine and performed actions such as creating a database, tables, and inserting records, but I never connected it with a program. 
-	</p>
-	<p>
-	  The last course outcome that was achieved is employing strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science.
-	</p>
-      </div>
+      <a href="unix-shell.html">
+	<button>
+	  Unix Shell
+	</button>
+      </a>
     </div>
 
   </body>
