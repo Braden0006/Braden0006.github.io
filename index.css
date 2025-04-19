@@ -1,20 +1,33 @@
 body {
-	width: 90dvw;
-	margin: auto;
-	padding-top: 1rem;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 p {
 	line-height: 1.75rem;
 	font-size: 1.125rem;
+	width: 90dvw;
+	margin: auto;
 }
 
 h1 {
 	font-weight: 600;
 }
 
+h2 {
+	padding-left: 1.328rem;
+	background-color: #0339fc;
+	color: white;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
 h3 {
 	font-size: 1.375rem;
+	padding-left: 1.328rem;
+	background-color: #0339fc;
+	color: white;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 } 
 
 button {
@@ -26,8 +39,8 @@ button {
 	font-size: 0.8rem;
 }
 
-.content-container {
-	margin-top: 3.5rem;
+.content-container .one {
+	margin-top: 1rem;
 	margin-bottom: 3.5rem;
 }
 
