@@ -7,6 +7,7 @@ p {
 	font-size: 1.125rem;
 	width: 90dvw;
 	margin: auto;
+	margin-top: 1rem;
 }
 
 h1 {
@@ -38,6 +39,12 @@ button {
 	background: #0339fc;
 	color: white;
 	font-size: 0.8rem;
+}
+
+.button-container {
+	width: 90dvw;
+	margin: auto;
+	margin-top: 1.5rem;
 }
 
 .content-container {
