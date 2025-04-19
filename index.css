@@ -1,5 +1,5 @@
 body {
-	width: 95dvw;
+	width: 90dvw;
 	margin: auto;
 	padding-top: 1rem;
 }
@@ -7,4 +7,9 @@ body {
 p {
 	line-height: 1.5rem;
 	font-size: 1.125rem;
+}
+
+.content-container {
+	margin-top: 3.5rem;
+	margin-bottom: 3.5rem;
 }
