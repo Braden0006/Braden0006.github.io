@@ -15,20 +15,21 @@ h1 {
 
 h2 {
 	padding-left: 1.328rem;
-	background-color: #0339fc;
 	color: white;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	width: 90dvw;
+	margin: auto;
 }
 
 h3 {
 	font-size: 1.375rem;
-	padding-left: 1.328rem;
-	background-color: #0339fc;
 	color: white;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-} 
+	margin: auto;
+	width: 90dvw;
+}
 
 button {
 	border-radius: 0.25rem;
@@ -46,4 +47,8 @@ button {
 
 .content-title {
 	font-size: 1.875rem;
+}
+
+.title-container {
+	background-color: #0339fc;
 }
