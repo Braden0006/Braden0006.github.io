@@ -11,6 +11,15 @@ p {
 
 h3 {
 	font-size: 1.375rem;
+} 
+
+button {
+	border-radius: 0.25rem;
+	border: none;
+	padding: 0.5rem 0.75rem;
+	background: #0339fc;
+	color: white;
+	font-size: 0.8rem;
 }
 
 .content-container {
