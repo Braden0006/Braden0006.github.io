@@ -3,7 +3,7 @@ body {
 }
 
 p {
-	line-height: 1.75rem;
+	line-height: 2.25rem;
 	font-size: 1.125rem;
 	width: 90dvw;
 	margin: auto;
@@ -15,7 +15,6 @@ h1 {
 }
 
 h2 {
-	padding-left: 1.328rem;
 	color: white;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
